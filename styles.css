@@ -1,10 +1,153 @@
-*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#f2f2f2;margin:0;padding:20px}
-.container{max-width:420px;margin:40px auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.08)}
-h1{margin-top:0;text-align:center}
-label{display:block;margin-top:12px;font-size:14px}
-input{width:100%;padding:10px;margin-top:6px;border:1px solid #ccc;border-radius:4px}
-button{margin-top:20px;width:100%;padding:12px;border:none;border-radius:6px;background:#3b82f6;color:#fff;font-size:16px;cursor:pointer}
-.errors{background:#fee2e2;color:#b91c1c;padding:10px;border-radius:4px;margin-bottom:10px}
-.success{background:#ecfccb;color:#365314;padding:10px;border-radius:4px;margin-bottom:10px}
-a{color:#3b82f6}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: 0.3s;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 10px rgba(155, 89, 182, 0.4);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #9b59b6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8e44ad;
+}
+
+.errors {
+  background-color: #ffe6e6;
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.success {
+  background-color: #e6ffea;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+p a {
+  color: #9b59b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.dashboard .welcome-card {
+  padding: 30px 20px;
+  border-radius: 20px;
+  background: #f7f7f7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-logout {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 12px;
+  background: #e74c3c;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-logout:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  .container {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  input, button, .btn-logout {
+    padding: 10px;
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .dashboard .welcome-card {
+    padding: 20px 15px;
+  }
+}

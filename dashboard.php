@@ -16,10 +16,12 @@ $username = $_SESSION['username'];
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-  <h1>Welcome, <?php echo htmlspecialchars($username); ?></h1>
-  <p>You are logged in.</p>
-  <p><a href="logout.php">Logout</a></p>
+<div class="container dashboard">
+  <div class="welcome-card">
+    <h1>Welcome, <?php echo htmlspecialchars($username); ?></h1>
+    <p>You are logged in</p>
+    <a href="logout.php" class="btn-logout">Logout</a>
+  </div>
 </div>
 </body>
 </html>
