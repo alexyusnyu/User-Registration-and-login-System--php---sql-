@@ -1,7 +1,7 @@
 # User Registration and Login System (PHP + MySQL)
 
 ## Description
-A simple, fully functional, responsive **User Registration and Login System** built with PHP and MySQL. Users can register, log in, access a dashboard, and log out. The system uses **secure password hashing** and sessions for authentication.
+A simple, fully functional, **User Registration and Login System** built with PHP and MySQL. Users can register, log in, access a dashboard, and log out. The system uses **secure password hashing** and sessions for authentication.
 
 ## Features
 - User registration with username, email, and password
@@ -9,12 +9,10 @@ A simple, fully functional, responsive **User Registration and Login System** bu
 - Dashboard accessible only to logged-in users
 - Logout functionality
 - Password hashing for security
-- Professional, responsive design for mobile and desktop
 
 ## Requirements
-- Windows, Linux, or Mac
 - PHP 8+
-- MySQL / MariaDB
+- MySQL
 - Web server (XAMPP recommended)
 
 ## Setup Instructions
@@ -33,8 +31,10 @@ A simple, fully functional, responsive **User Registration and Login System** bu
 7. Register a new user and log in to access the dashboard.
 
 ## Screenshots
-### Login Page
+
 ![Login Page](screenshot1.png)
 
-### Dashboard
+
 ![Dashboard](screenshot2.png)
+
+![Dashboard](screenshot3.png)
